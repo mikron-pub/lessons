@@ -1,107 +1,126 @@
-# Список библиотек Arduino
+# Arduino библиотеки
 
-![alt text](imgs/image.png)
+## Датчики
 
-Вы уже знаете, что комьюнити Ардуино очень большое и ежедневно растёт. За время своего существования оно родило огромное количество библиотек. Я решил составить список самых необычных, интересных и полезных, ссылки ведут на гитхаб или сайт разработчика. Полного набора специализированных библиотек для работы с модулями и шилдами здесь нет! Ищутся в гугле по названию чипа, здесь я оставлял только универсальные. Библиотеки, помеченные как стандартные, скачивать не нужно!
+- [GyverMAX6675](https://github.com/GyverLibs/GyverMAX6675) - лёгкая библиотека для драйвера термопары MAX6675
+- [GyverHTU21D](https://github.com/GyverLibs/GyverHTU21D) - лёгкая библиотека для датчика температуры и влажности HTU21D
+- [GyverINA](https://github.com/GyverLibs/GyverINA) - лёгкая библиотека для модулей power-monitor'ов INA219 и INA226
+- [Psychrometer](https://github.com/GyverLibs/Psychrometer) - библиотека для определения влажности по сухому и мокрому термометру для Arduino
+- [Tachometer](https://github.com/GyverLibs/Tachometer) - библиотека тахометра для Arduino без привязки к железу
+- [GyverNTC](https://github.com/GyverLibs/GyverNTC) - библиотека для работы с NTC термисторами по закону Стейнхарта-Харта
+- [GyverHX711](https://github.com/GyverLibs/GyverHX711) - библиотека работы с датчиками веса (АЦП) HX711 для Arduino
+- [GyverBME280](https://github.com/GyverLibs/GyverBME280) - библиотека для работы с BME280 по I2C для Arduino
+- [GyverDS18](https://github.com/GyverLibs/GyverDS18) - легкая библиотека для работы с 1-Wire термометрами DS18B20
+- [GyverDS3231](https://github.com/GyverLibs/GyverDS3231) - библиотека для работы с микросхемой реального времени DS3231
+- [microDS3231](https://github.com/GyverLibs/microDS3231) - лёгкая библиотека для работы с RTC DS3231 для Arduino
 
-Список составлен для библиотек, подходящих для UNO, NANO, MEGA, то есть тут нет мощных библиотек для DUE и ZERO подобных плат. Источники:
+## Железки ввод
 
-- <https://www.arduino.cc/en/reference/libraries>
-- <https://github.com/Lembed/Awesome-arduino/blob/master/README.md>
-- <https://www.arduinolibraries.info/architectures/avr>
+- [GyverHub](https://github.com/GyverLibs/GyverHub) - панель управления для esp8266, esp32 и других Arduino. Конструктор интерфейса. Интеграция в умный дом
+- [EncButton](https://github.com/GyverLibs/EncButton) - лёгкая библиотека для энкодера и/или кнопки с огромным количеством возможностей
+- [GyverJoy](https://github.com/GyverLibs/GyverJoy) - библиотека для удобной работы с джойстиком
+- [NecDecoder](https://github.com/GyverLibs/NecDecoder) - лёгкая библиотека для декодирования ИК протокола NEC
+- [AnalogKey](https://github.com/GyverLibs/AnalogKey) - библиотека для работы с аналоговой клавиатурой для Arduino
 
-## avr-libs
+## Железки вывод
 
-В состав компилятора Arduino IDE входит набор стандартных библиотек под микроконтроллеры AVR (т.н. toolchain – набор инструментов), их можно просто подключить и использовать их возможности. Полный список и документация на все либы находится [здесь](https://nongnu.org/avr-libc/user-manual/modules.html). Тут перечислю самые полезные и интересные (название будет ссылкой на документацию):
+- [GyverBlinker](https://github.com/GyverLibs/GyverBlinker) - таймер со счётчиком для мигания светодиодом и других задач
+- [GyverBeeper](https://github.com/GyverLibs/GyverBeeper) - генерация писка по таймеру
+- [QuickCharge](https://github.com/GyverLibs/QuickCharge) - библиотека для управления адаптерами с поддержкой технологии QuickCharge 2.0/3.0
+- [GyverShift](https://github.com/GyverLibs/GyverShift) - библиотека для удобного управления каскадом сдвиговых регистров 74HC595 и 74HC165
+- [GRGB](https://github.com/GyverLibs/GRGB) - библиотека для управления RGB светодиодами и лентами для Arduino
+- [microLED](https://github.com/GyverLibs/microLED) - ультра лёгкая библиотека для работы с адресной лентой/матрицей
+- [ServoSmooth](https://github.com/GyverLibs/ServoSmooth) - библиотека для плавного управления сервоприводами
+- [SoftServo](https://github.com/GyverLibs/SoftServo) - библиотека для программного управления Servo (на базе millis/micros)
+- [GyverRelay](https://github.com/GyverLibs/GyverRelay) - библиотека классического релейного регулятора для Arduino
+- [PWMrelay](https://github.com/GyverLibs/PWMrelay) - библиотека для генерации низкочастотного ШИМ сигнала для реле (для ПИД регуляторов и проч.)
+- [GyverDimmer](https://github.com/GyverLibs/GyverDimmer) - библиотека для управления симисторным диммером с Arduino
+- [GyverStepper](https://github.com/GyverLibs/GyverStepper) - производительная библиотека для управления шаговыми моторами с Arduino
+- [GyverMotor](https://github.com/GyverLibs/GyverMotor) - библиотека для удобного управления коллекторными моторами через драйвер
+- [AccelMotor](https://github.com/GyverLibs/AccelMotor) - библиотека для расширенного управления и стабилизации мотора с энкодером для Arduino
 
-- [math.h](https://nongnu.org/avr-libc/user-manual/group__avr__math.html) – библиотека с кучей математических функций. Подключена по умолчанию
-- [time.h](https://nongnu.org/avr-libc/user-manual/group__avr__time.html) – библиотека для работы с временем. Счёт, конвертация, временные зоны и прочее
-- [avr/eeprom.h](https://nongnu.org/avr-libc/user-manual/group__avr__eeprom.html) – родная библиотека для работы с EEPROM.
-- [avr/power.h](https://nongnu.org/avr-libc/user-manual/group__avr__power.html) – библиотека управления потреблением МК: делитель системной частоты и включение/выключение периферии
-- [avr/sleep.h](https://nongnu.org/avr-libc/user-manual/group__avr__sleep.html) – библиотека для управления режимом энергопотребления МК
-- [avr/wdt.h](https://nongnu.org/avr-libc/user-manual/group__avr__watchdog.html) – управление сторожевым таймером
-- [util/delay.h](https://nongnu.org/avr-libc/user-manual/group__util__delay.html) – библиотека с задержками на базе тактов процессора (работает без таймера 0)
+## Дисплеи
 
-## Время, таймеры
+- [GyverSegment](https://github.com/GyverLibs/GyverSegment) - мощная библиотека для любых дисплеев с 7-сегментными индикаторами
+- [GyverMAX7219](https://github.com/GyverLibs/GyverMAX7219) - самая резкая библиотека для матриц MAX7219 на диком западе
+- [GyverOLED](https://github.com/GyverLibs/GyverOLED) - лёгкая и быстрая библиотека для OLED дисплея
+- [SevenSegmentsDisp](https://github.com/GyverLibs/SevenSegmentsDisp) - _[дорабатывается]_ библиотка для модулей семисегментного дисплея TM74HC595
+- [GyverTM1637](https://github.com/GyverLibs/GyverTM1637) - бибилотека для 7 сегментного дисплея на чипе TM1637 с кучей приколюх
+- [CharDisplay](https://github.com/GyverLibs/CharDisplay) - графический движок на символах: полноценное рисование, индикаторы загрузки, графики
 
-- [Time](https://github.com/PaulStoffregen/Time) – счётчик времени для Ардуино, считает часы-минуты-месяцы и всё такое. [Описание](http://playground.arduino.cc/Code/Time)
-- [RTCTimer](https://github.com/SodaqMoja/RTCTimer) – таймер для работы в паре с RTC модулем
-- [GyverTimer](https://github.com/AlexGyver/GyverLibs) – Есть мс и мкс таймеры, режим периода и таймаута, улучшенный алгоритм счёта периодов.
-- [Chrono](https://github.com/SofaPirate/Chrono) – ещё библиотека “таймера с millis()” для эффективного построения логики своего кода
-- [elapsedMillis](https://github.com/pfeerick/elapsedMillis) – ещё один простой таймер с millis()
-- [buildTime](https://github.com/AlexGyver/GyverLibs) – библиотека для получения даты и времени компиляции в явном виде
-- [TimeLord](https://github.com/probonopd/TimeLord) – библиотека, позволяющая узнать время восхода/заката Солнца и Луны, лунные фазы, звёздное время и проч. на основе географического положения
-- [GyverTimers](https://github.com/AlexGyver/GyverLibs) – библиотека для управления прерываниями по всем таймерам на ATmega328 и ATmega2560 с возможностью отдельной настройки каналов. Объективно лучше следующих трёх библиотек.
-- [TimerOne](https://github.com/PaulStoffregen/TimerOne) – библиотека для удобного ручного контроля за Таймером 1 (прерывания, ШИМ, и.т.д.)
-- [MsTimer2](https://github.com/PaulStoffregen/MsTimer2) – библиотека для удобного ручного контроля за Таймером 2. Есть версия [FlexiTimer2](https://github.com/PaulStoffregen/FlexiTimer2), которая чем-то лучше.
-- [TimerThree](https://github.com/PaulStoffregen/TimerThree) – библиотека для удобного ручного контроля за Таймером 3
+## Алгоритмы
 
-## Коммуникация, интерфейсы
+- [Stamp](https://github.com/GyverLibs/Stamp) - хранение и преобразование времени
+- [Stack](https://github.com/GyverLibs/Stack) - библиотека для удобной работы с массивами любого типа данных типа std::vector или массивов в js
+- [SunPosition](https://github.com/GyverLibs/SunPosition) - определение положения солнца по геолокации и времени
+- [OVS](https://github.com/GyverLibs/OVS) - повышение разрядности измерений (оверсэмплинг)
+- [Approxy](https://github.com/GyverLibs/Approxy) - линейный аппроксиматор данных
+- [GyverPID](https://github.com/GyverLibs/GyverPID) - библиотека PID регулятора для Arduino
+- [GyverFilters](https://github.com/GyverLibs/GyverFilters) - библиотека с некоторыми удобными фильтрами для Arduino
+- [Forecaster](https://github.com/GyverLibs/Forecaster) - библиотека для определения прогноза погоды по давлению для Arduino
+- [mString](https://github.com/GyverLibs/mString) - РЕЗКАЯ КАК ПОНОС И ЛЁГКАЯ КАК ПЁРЫШКО ЗАМЕНА STRING
+- [VolAnalyzer](https://github.com/GyverLibs/VolAnalyzer) - библиотека для амплитудного анализа звука на Arduino
+- [Clap](https://github.com/GyverLibs/Clap) - библиотека для распознавания хлопков в микрофон
+- [Random16](https://github.com/GyverLibs/Random16) - библиотека для быстрой генерации 16 бит случайных чисел
+- [Hamming](https://github.com/GyverLibs/Hamming) - библиотека для упаковки и распаковки данных по алгоритму Хэмминга (избыточные данные для восстановления)
+- [TimeRandom](https://github.com/GyverLibs/TimeRandom) - библиотека для генерации набора случайных чисел с привязкой ко времени
+- [UnixTime](https://github.com/GyverLibs/UnixTime) - конвертер unix time stamp в дату и время и наоборот для Arduino
+- [GyverGFX](https://github.com/GyverLibs/GyverGFX) - лёгкая библиотека двухмерной графики для дисплеев и матриц
+- [GyverFIFO](https://github.com/GyverLibs/GyverFIFO) - универсальный кольцевой буфер для Arduino
+- [GyverLBUF](https://github.com/GyverLibs/GyverLBUF) - линейный буфер для Arduino
+- [fixed](https://github.com/GyverLibs/fixed) - реализация вычислений с фиксированной точкой для Arduino
+- [FFT_C](https://github.com/GyverLibs/FFT_C) - библиотека преобразования Фурье на С (для esp8266)
+- [BitPack](https://github.com/GyverLibs/BitPack) - библиотека для упаковки битовых флагов в байтовый массив (экономия места) для Arduino
+- [CRT](https://github.com/GyverLibs/CRT) - библиотека с набором функций для CRT коррекции светодиодов
+- [StringUtils](https://github.com/GyverLibs/StringUtils) - набор инструментов для работы со строками
+- [GSON](https://github.com/GyverLibs/GSON) - парсер и сборщик данных в формате JSON для Arduino
+- [FOR_MACRO](https://github.com/GyverLibs/FOR_MACRO) - variadic for macro
 
-- [GyverBus](https://github.com/AlexGyver/GyverLibs) – общение по протоколу GBUS. Двухсторонняя связь сети Ардуинок по одному проводу. [Описание](https://alexgyver.ru/gyverbus/)
-- [Firmata](https://www.arduino.cc/en/Reference/Firmata) – стандартная библиотека для общения с компьютером по протоколу Firmata. [Описание](https://www.arduino.cc/en/Reference/Firmata)
-- [SoftwareSerial](https://www.arduino.cc/en/Reference/SoftwareSerial) – стандартная библиотека для создания TTL Serial на любых двух пинах, позволяет создать дополнительный порт для общения с Bluetooth/GPS/GSM и прочими модулями с Serial коммуникацией.
-- [AltSoftSerial](https://github.com/PaulStoffregen/AltSoftSerial) – самая лучшая версия софтварного Serial, использует системный таймер
-- [SerialCommand](https://github.com/kroimon/Arduino-SerialCommand) – лёгкая библиотека для общения через порт при помощи команд
-- [CmdMessenger](https://github.com/thijse/Arduino-CmdMessenger) – мощная библиотека для общения через Serial порт, со своим парсером и кучей приколюх. - - [Описание](https://playground.arduino.cc/Code/CmdMessenger)
-- [EasyTransfer](https://github.com/madsci1016/Arduino-EasyTransfer) – библиотека для общения двух Ардуинок через последовательный порт
-- [Streaming](http://arduiniana.org/libraries/streaming/) – вывод в порт “в стиле C++” при помощи оператора <<
-- [OneWire](https://github.com/PaulStoffregen/OneWire) – библиотека для общения по протоколу one wire, например с датчиками температуры DS18b20. Ардуино может быть “slave” для общения, [читать тут](https://forum.pjrc.com/threads/23939-Strange-behavior-on-the-Onewireslave-library?p=33608&viewfull=1#post33608)
-- [SerialControl](https://github.com/UrsusExplorans/SerialControl) – набор примеров для управления состояниями пинов при помощи Serial команд. [Описание](http://playground.arduino.cc/Code/SerialControl)
-- [MiniPirate](https://github.com/chatelao/MiniPirate) – более мощная версия SerialControl, позволяет командами в порт крутить серво, сканировать i2c и многое другое!
-- [MIDI_library](https://github.com/FortySevenEffects/arduino_midi_library) – библиотека для работы с музыкальными устройствами по протоколу MIDI (через Serial, подходит любая Ардуина)
-- [MIDI](https://github.com/PaulStoffregen/MIDI) – MIDI библиотека от великого PaulStoffregen (через Serial, подходит любая Ардуина)
-- [arcore](https://github.com/rkistner/arcore) – ещё одна библиотека для MIDI (USB-MIDI, только для Леонардо/Микро)
-- [MIDIUSB](https://github.com/arduino-libraries/MIDIUSB) – ещё одна библиотека для MIDI (USB-MIDI, только для Леонардо/Микро)
-- [HIDUINO](https://github.com/ddiakopoulos/hiduino) – набор инструментов для создания USB MIDI устройства
-- [HID](https://github.com/NicoHood/HID) – очень мощная библиотека для создания HID устройств (мыши, клавиатуры, геймпады и другие USB контроллеры)
-- [ArduinoJoystickLibrary](https://github.com/MHeironimus/ArduinoJoystickLibrary) – ещё одна библиотека для создания полноценного HID геймпада на Leonardo/Micro (ATmega32U4)
-- [CPPM](https://github.com/jmparatte/jm_CPPM) – библиотека для организации связи по протоколу CPPM (например RC приёмник Orange R615X)
-- [PPMEncoder](https://github.com/schinken/PPMEncoder) – декодирование и генерация PPM сигнала для RC моделей
-- [PWMread](https://create.arduino.cc/projecthub/kelvineyeone/read-pwm-decode-rc-receiver-input-and-apply-fail-safe-6b90eb) – статья + библиотека для чтения PWM сигнала с приёмников RC моделей
-- [TVout](https://github.com/Avamander/arduino-tvout) – библиотека для вывода графики на экран телевизора через вход AV. [Описание](https://playground.arduino.cc/Main/TVout)
-- [X10](https://github.com/tigoe/x10) – библиотека для общения по протоколу X10 по линии питания 220V. [Описание тут](https://www.arduino.cc/en/tutorial/x10)
-- [NicoHoodProtocol](https://github.com/NicoHood/NicoHoodProtocol) – универсальный протокол связи по проводу
+## Связь
 
-## Некоторое железо
+- [GyverHTTP](https://github.com/GyverLibs/GyverHTTP) - очень простой и лёгкий HTTP сервер и полуасинхронный HTTP клиент
+- [EasyHID](https://github.com/GyverLibs/EasyHID) - программная реализация USB мыши и клавиатуры
+- [GyverTransfer](https://github.com/GyverLibs/GyverTransfer) - интерфейс для передачи данных (Stream-совместимый) по проводу, радио и ИК
+- [GParser](https://github.com/GyverLibs/GParser) - простой и быстрый парсер строк в отдельные подстроки и числа для Arduino
+- [AsyncStream](https://github.com/GyverLibs/AsyncStream) - библиотека для асинхронного чтения объектов Stream (Serial итд)
+- [Gyver433](https://github.com/GyverLibs/Gyver433) - библиотека для радиомодулей 433 МГц и Arduino
+- [GyverBus](https://github.com/GyverLibs/GyverBus) - библиотека для общения по протоколу GBUS
+- [GyverUART](https://github.com/GyverLibs/GyverUART) - лёгкая библиотека для работы с последовательным портом (аналог Serial)
+- [MicroUART](https://github.com/GyverLibs/MicroUART) - ещё более лёгкая библиотека для работы с последовательным портом
 
-- [GyverStepper](https://alexgyver.ru/gyverstepper/) – высокопроизводительная библиотека для управления шаговым мотором
-- [AccelStepper](http://www.airspayce.com/mikem/arduino/AccelStepper/) – более интересная и качественная замена стандартной библиотеке [Stepper](https://www.arduino.cc/en/Reference/Stepper) для контроля шаговых моторчиков. Скачать можно со страницы разработчика.
-- [AccelMotor](https://alexgyver.ru/accelmotor/) – библиотека для управления мотором с энкодером (превращает обычный мотор в “шаговый” или сервомотор)
-- [ServoSmooth](https://github.com/AlexGyver/GyverLibs) – дополнение к стандартной библиотеке Servo, позволяющее управлять сервоприводом с настройкой максимальной скорости движения и разгона/торможения (как в AccelStepper, только для серво). Must have любого любителя серво манипуляторов!
-- [CapacitiveSensor](https://github.com/PaulStoffregen/CapacitiveSensor) – библиотека для создания сенсорных кнопок (из пары компонентов рассыпухи). Описание
-- [ADCTouchSensor](https://github.com/martin2250/ADCTouch) – ещё одна версия библиотеки для создания сенсорных кнопок. Есть ещё одна, так, на всякий случай
-- [TouchWheel](https://github.com/simap/TouchWheel) – библиотека для создания сенсорных слайдеров и колец
-- [Buzz](https://github.com/connornishijima/arduino-buzz) – детектор присутствия на основе всего лишь одного провода! (измеряет ЭМ волны)
-- [Bounce](https://github.com/thomasfredericks/Bounce2) – библиотека антидребезга для кнопок и всего такого. Сомнительная полезность, но почитайте описание
-- [oneButton](https://github.com/mathertel/OneButton) – библиотека для расширенной работы с кнопкой. На мой взгляд неудобная
-- [GyverButton](https://github.com/AlexGyver/GyverLibs) – библиотека для расширенной работы с кнопкой. Очень много возможностей!
-- [AdaEncoder](https://github.com/GreyGnome/AdaEncoder) – библиотека для работы с энкодерами
-- [GyverEncoder](https://github.com/AlexGyver/GyverLibs) – библиотека для энкодеров с кучей возможностей, поддерживает разные типы энкодеров
-- [RTCLib](https://github.com/adafruit/RTClib) – лёгкая библиотека, поддерживающая большинство RTC модулей
-- [OV7670](https://github.com/ComputerNerd/ov7670-no-ram-arduino-uno) – библиотека для работы с камерой на OV7670
-- [IRremote](https://github.com/z3t0/Arduino-IRremote) – базовая библиотека для работы с ИК пультами и излучателями
-- [IRLib](https://github.com/cyborg5/IRLib) – более расширенная версия для работы с ИК устройствами
-- [IRLremote](https://github.com/NicoHood/IRLremote) – самая чёткая библиотека для ИК пультов, работает через прерывания. 100% отработка пульта
-- [keySweeper](https://github.com/samyk/keysweeper) – почти готовый проект для перехвата нажатий с беспроводных клавиатур
-- [USB_Host_Shield](https://github.com/felis/USB_Host_Shield_2.0) – позволяет Ардуине работать с геймпадами (PS, XBOX) и другими USB устройствами
-- [Brain](https://github.com/kitschpatrol/Brain) – библиотека для работы с NeuroSky ЭЭГ модулями
-- [TinyGPS](https://github.com/mikalhart/TinyGPS) – шустрая библиотека для работы с GPS модулями
-- [GyverRGB](https://github.com/AlexGyver/GyverLibs) – библиотека для работы с RGB светодиодами и лентами
-- [FadeLED](https://github.com/septillion-git/FadeLed) – библиотека для плавного (ШИМ) мигания светодиодами с разными периодами
-- [CurrentTransformer](https://github.com/JChristensen/CurrentTransformer) – измерение силы тока при помощи трансформатора (катушки) на проводе. Читай: токовые клещи
-- [LiquidCrystal-I2C](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library) – библиотека для LCD дисплеев с I2C контроллером. Разработчик – fdebrabander
-- [LiquidTWI2](https://github.com/lincomatic/LiquidTWI2) – быстрая библиотека для LCD дисплеев на контроллерах MCP23008 или MCP23017
-- [LCD_1602_RUS](https://github.com/ssilver2007/LCD_1602_RUS) – библиотека русского шрифта для LCD дисплеев
-- [LCD_1602_RUS_ALL](https://github.com/ssilver2007/LCD_1602_RUS_ALL) – новая версия предыдущей библиотеки с поддержкой украинского языка
-- [u8glib](https://github.com/olikraus/u8glib) – библиотека для работы с монохромными LCD и OLED дисплеями
-- [ucglib](https://github.com/olikraus/ucglib) – библиотека для работы с цветными LCD и OLED дисплеями
-- [Adafruit_SSD1306](https://github.com/adafruit/Adafruit_SSD1306) – ещё одна библиотека для OLED дисплеев
-- [Adafruit-GFX-Library](https://github.com/adafruit/Adafruit-GFX-Library) – дополнение для adafruit библиотек дисплеев, позволяет выводить графику
-- [SSD1306Ascii](https://github.com/greiman/SSD1306Ascii) – самодостаточная и очень лёгкая библиотека для вывода текста на OLEDы
-- [NeoPixelBus](https://github.com/Makuna/NeoPixelBus) – библиотека для работы с адресной светодиодной лентой, адаптированная под esp8266 (NodeMCU, Wemos и др.).
-- [microLED](https://alexgyver.ru/microled/) – лёгкая и простая библиотека для работы с адресной лентой
-- [Gyver433](https://github.com/AlexGyver/GyverLibs#Gyver433) – лёгкая библиотека для отправки любых данных через радио модули 433 МГц
-- [rc-switch](https://github.com/sui77/rc-switch) – библиотека для работы с радио модулями 433 МГц и разными протоколами связи
+## Системное
 
-## Работа с данными, фильтры
+- [GyverDB](https://github.com/GyverLibs/GyverDB) - база данных для хранения данных
+- [GyverIO](https://github.com/GyverLibs/GyverIO) - быстрые функции для работы с пинами AVR, ESP8266, ESP32
+- [Pairs](https://github.com/GyverLibs/Pairs) - хранение данных в текстовом виде в формате "ключ":значение
+- [TimerMs](https://github.com/GyverLibs/TimerMs) - многофункциональный программный таймер на системном таймере millis() для Arduino
+- [EEManager](https://github.com/GyverLibs/EEManager) - Менеджер EEPROM - библиотека для уменьшения износа памяти
+- [GyverOS](https://github.com/GyverLibs/GyverOS) - библиотека лёгкого диспетчера задач для Arduino
+- [GyverPower](https://github.com/GyverLibs/GyverPower) - библиотека для управления энергопотреблением МК AVR
+- [buildTime](https://github.com/GyverLibs/buildTime) - парсинг и получение даты и времени компиляции из констант DATE и TIME
+- [GyverTimer](https://github.com/GyverLibs/GyverTimer) - полноценный таймер на базе системных millis() / micros()
+- [pgm_utils](https://github.com/GyverLibs/pgm_utils) - набор удобных инструментов для работы с PROGMEM
+- [GTL](https://github.com/GyverLibs/GTL) - набор шаблонных инструментов
+- [Benchmark](https://github.com/GyverLibs/Benchmark) - измерение времени выполнения кода
+
+## Периферия МК (только AVR)
+
+- [GyverTimers](https://github.com/GyverLibs/GyverTimers) - настройка и контроль прерываний по аппаратным таймерам ATmega328p, ATmega2560
+- [GyverWDT](https://github.com/GyverLibs/GyverWDT) - библиотека для управления WDT на AVR ATmega328p/32U4/2560 & ATtiny85/84/167
+- [microWire](https://github.com/GyverLibs/microWire) - лёгкая библиотека со стандартным набором инструментов для работы с аппаратным I2C
+- [directTimers](https://github.com/GyverLibs/directTimers) - библиотека для расширенного ручного управления таймерами ATMega2560, ATMega328, ATMega32u4
+- [directADC](https://github.com/GyverLibs/directADC) - библиотека для расширенного ручного управления АЦП и компаратором ATmega328
+- [GyverPWM](https://github.com/GyverLibs/GyverPWM) - библиотека для расширенной генерации ШИМ на ATmega328 (Arduino UNO/Nano/Pro Mini...)
+
+## Библиотеки для ESP8266/ESP32
+
+- [Settings](https://github.com/GyverLibs/Settings) - максимально простой и удобный билдер вебморды для настроек
+- [FileData](https://github.com/GyverLibs/FileData) - замена EEPROM, хранение любых данных и переменных в файлах
+- [GyverPortal](https://github.com/GyverLibs/GyverPortal) - простой конструктор веб интерфейса для esp8266 и ESP32
+- [FastBot2](https://github.com/GyverLibs/FastBot2) - очень быстрая и универсальная библиотека для телеграм бота (новая версия)
+- [FastBot](https://github.com/GyverLibs/FastBot) - быстрая библиотека для телеграм бота
+- [SimplePortal](https://github.com/GyverLibs/SimplePortal) - простой менеджер WiFi для esp8266 для задания логина-пароля WiFi и режима работы
+- [GyverNTP](https://github.com/GyverLibs/GyverNTP) - библиотека для получения точного времени с NTP сервера для esp8266/esp32
+- [rtc_utils](https://github.com/GyverLibs/rtc_utils) - обёртка для более удобного использования RTC памяти на esp8266
+- [EspSleep](https://github.com/GyverLibs/EspSleep) - сон для esp8266 на любой (очень большой) период
+- [WiFiConnector](https://github.com/GyverLibs/WiFiConnector) - асинхронное подключение к WiFi с автоматическим созданием AP
